@@ -117,7 +117,7 @@ class Mpr121
         void set_globle_param(u16 value);
         void get_filtered_reg_data(u16 *elecs_stat,u16* elecs_filtered_data);
         void get_baseline_data(u16 elecs_stat,u8* base_line_data);
-    private:        
+    // private:        
         u8 _IIC_ADDR;
         void IIC_read_bytes(u8 reg,u8* bytes,u32 bytes_len);
         void IIC_read_byte(u8 reg,u8* byte);
